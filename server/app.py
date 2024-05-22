@@ -39,7 +39,7 @@ def get_stored_animals():
         if type(db)==MongoClient:
             db.close()
 
-app.route('/environment')
+@app.route('/environment')
 def env():
     return jsonify(
             {"env":[
