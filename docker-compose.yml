@@ -16,7 +16,7 @@ services:
         - 4200:4200
       networks:
       - shared-network
-  server:
+  api-server:
       build:
         dockerfile: Dockerfile
         context: ./server
@@ -44,6 +44,15 @@ services:
       ports:
         - 27017:27017
       networks:
+      - shared-network
+  nginx-proxy:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports: 
+      - 8080:8080
+    networks:
       - shared-network
 
 networks:

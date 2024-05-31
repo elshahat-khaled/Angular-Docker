@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrlServer: 'https://5000-elshahatkha-angulardock-xgirtp3z1v0.ws-eu114.gitpod.io'
+  baseUrlServer: 'https://5000-elshahatkha-angulardock-tcs3ce95at3.ws-eu114.gitpod.io'
 };
 
 /*
